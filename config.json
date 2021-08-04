@@ -1,0 +1,651 @@
+{
+    "name": "Chic-给我的主题来个Star呗!🎉",
+    "version": "1.7.6",
+    "author": "@ITJoker (原作者：@Bentham)",
+    "repository": "https://github.com/ITJoker233/Gridea-theme-Chic",
+    "customConfig": [{
+            "name": "author",
+            "label": "博主名字",
+            "group": "网站信息",
+            "value": "",
+            "type": "input",
+            "note": "请输入博主名字"
+        },
+        {
+            "name": "keywords",
+            "label": "关键字",
+            "group": "网站信息",
+            "value": "",
+            "type": "input",
+            "note": "请输入关键字(多个请用英文的,分开)"
+        },
+        {
+            "name": "description",
+            "label": "描述",
+            "group": "网站信息",
+            "value": "",
+            "type": "input",
+            "note": "请输入描述"
+        },
+        {
+            "name": "copyright",
+            "label": "版权声明",
+            "group": "网站信息",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "list",
+            "label": "目录显示",
+            "group": "网站信息",
+            "value": "off",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "icpinfo",
+            "label": "* 备案信息",
+            "group": "网站信息",
+            "value": "",
+            "type": "input",
+            "note": "请输入备案信息(没有备案可以不填写) 例:浙公网安备 3301040xxxxxxx号"
+        },
+        {
+            "name": "icpcode",
+            "label": "* 备案号",
+            "group": "网站信息",
+            "value": "",
+            "type": "input",
+            "note": "请输入备案号(没有备案可以不填写) 必须是数字 例:3301040xxxxxxx"
+        },
+        {
+            "name": "rss",
+            "label": "rss",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "twitter",
+            "label": "twitter",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "facebook",
+            "label": "facebook",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "github",
+            "label": "github",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "linkedin",
+            "label": "linkedin",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "youtube",
+            "label": "youtube",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "instagram",
+            "label": "instagram",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "tumblr",
+            "label": "tumblr",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "weibo",
+            "label": "微博",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "qq",
+            "label": "QQ",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "send",
+            "label": "Telegram",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
+            "name": "friends",
+            "label": "友链",
+            "group": "友链",
+            "type": "array",
+            "value": [{
+                "description": "ITJoker's Blog",
+                "siteLink": "https://blog.itjoker.cn",
+                "siteLogo": "https://blog.itjoker.cn/images/avatar.png",
+                "siteName": "ITJoker"
+            }],
+            "arrayItems": [{
+                    "label": "名称",
+                    "name": "siteName",
+                    "type": "input",
+                    "value": "",
+                    "note": "请输入站点名称"
+                },
+                {
+                    "label": "链接",
+                    "name": "siteLink",
+                    "type": "input",
+                    "value": "",
+                    "note": "请输入链接地址"
+                },
+                {
+                    "label": "Logo",
+                    "name": "siteLogo",
+                    "type": "input",
+                    "value": "",
+                    "note": "请输入Logo地址"
+                },
+                {
+                    "label": "描述",
+                    "name": "description",
+                    "type": "textarea",
+                    "value": "",
+                    "note": "请输入描述信息"
+                }
+            ],
+            "note": ""
+        },
+        {
+            "name": "platformName",
+            "label": "Powered By 名称",
+            "group": "主题设置",
+            "value": "Coding.net",
+            "type": "input",
+            "note": "请输入平台的名称"
+        },
+        {
+            "name": "platformLink",
+            "label": "Powered By 链接",
+            "group": "主题设置",
+            "value": "https://coding.net",
+            "type": "input",
+            "note": "请输入平台的链接"
+        },
+        {
+            "name": "version",
+            "label": "主题版本",
+            "group": "主题设置",
+            "value": "1.7.6",
+            "type": "select",
+            "options": [{
+                "label": "最新版本",
+                "value": "1.7.6"
+            }]
+        },
+        {
+            "name": "update",
+            "label": "更新提醒",
+            "group": "主题设置",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+
+            ]
+        },
+        {
+            "name": "language",
+            "label": "主题语言",
+            "group": "主题设置",
+            "value": "en",
+            "type": "select",
+            "options": [{
+                    "label": "English",
+                    "value": "en"
+                },
+                {
+                    "label": "中文",
+                    "value": "zh"
+                }
+            ]
+        },
+        {
+            "name": "siteFont",
+            "label": "网站字体",
+            "group": "主题设置",
+            "value": "-apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei',sans-serif",
+            "type": "select",
+            "options": [{
+                    "label": "-apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei',sans-serif",
+                    "value": "-apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei',sans-serif"
+                },
+                {
+                    "label": "Georgia, serif",
+                    "value": "Georgia, serif"
+                },
+                {
+                    "label": "Fira Code Medium",
+                    "value": "Fira Code Medium"
+                },
+                {
+                    "label": "Microsoft Yahei",
+                    "value": "Microsoft Yahei"
+                },
+                {
+                    "label": "monospace",
+                    "value": "monospace"
+                },
+                {
+                    "label": "Relative, mono, sans-serif",
+                    "value": "Relative, mono, sans-serif"
+                }
+            ],
+            "note": ""
+        },
+        {
+            "name": "prismSetting",
+            "label": "代码高亮设置(prism.css)",
+            "group": "主题设置",
+            "value": "https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css",
+            "type": "input",
+            "note": "默认 https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.cssic"
+        },
+        {
+            "name": "cdnSetting",
+            "label": "CDN设置",
+            "group": "主题设置",
+            "value": "https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic",
+            "type": "input",
+            "note": "不设置为默认的jsdeliver,例如：https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic"
+        },
+        {
+            "name": "bs",
+            "label": "跟踪 ID",
+            "group": "百度统计",
+            "value": "",
+            "type": "input",
+            "note": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }, {
+            "name": "ga",
+            "label": "跟踪 ID",
+            "group": "谷歌统计",
+            "value": "",
+            "type": "input",
+            "note": "UA-xxxxxxxxx-x"
+        },
+        {
+            "name": "baidu",
+            "label": "百度自动提交",
+            "group": "百度自动提交",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "view",
+            "label": "访问量插件",
+            "group": "插件中心",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "weather",
+            "label": "天气插件",
+            "group": "插件中心",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "关",
+                    "value": "off"
+                },
+                {
+                    "label": "开",
+                    "value": "on"
+                }
+            ]
+        },
+        {
+            "name": "live2dDebug",
+            "label": "Live2D是否本地预览(同步时请关闭)",
+            "group": "插件中心",
+            "value": "off",
+            "type": "select",
+            "options": [{
+                    "label": "关",
+                    "value": "off"
+                },
+                {
+                    "label": "开",
+                    "value": "on"
+                }
+            ]
+        },
+        {
+            "name": "live2d",
+            "label": "Live2d状态",
+            "group": "插件中心",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "sentence",
+            "label": "一言插件",
+            "group": "插件中心",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "donate",
+            "label": "赞助插件",
+            "group": "插件中心",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "donate_wechat",
+            "label": "微信支付二维码链接",
+            "group": "插件中心",
+            "value": "https://blog.itjoker.cn/wechat.jpg",
+            "type": "input",
+            "note": "请输入微信支付二维码链接(支持base64格式)"
+        },
+        {
+            "name": "donate_alipay",
+            "label": "支付宝收钱二维码链接",
+            "group": "插件中心",
+            "value": "https://blog.itjoker.cn/alipay.jpg",
+            "type": "input",
+            "note": "请输入支付宝收钱二维码链接(支持base64格式)"
+        },
+        {
+            "name": "love_click_animation",
+            "label": "爱心点击特效",
+            "group": "插件中心",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "music",
+            "label": "Music插件",
+            "group": "Music插件",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "musicModel",
+            "label": "吸底 / Mini / 普通 模式(建议吸底模式...其他的待测试)",
+            "group": "Music插件",
+            "value": "fixed",
+            "type": "select",
+            "options": [{
+                    "label": "吸底模式",
+                    "value": "fixed"
+                },
+                {
+                    "label": "Mini模式",
+                    "value": "mini"
+                },
+                {
+                    "label": "普通模式",
+                    "value": "normal"
+                }
+            ]
+        },
+        {
+            "name": "musics",
+            "label": "音乐",
+            "group": "Music插件",
+            "type": "array",
+            "value": [{
+                "description": "",
+                "siteLink": "",
+                "siteLogo": "",
+                "siteName": ""
+            }],
+            "arrayItems": [{
+                    "name": "url",
+                    "label": "歌曲的url地址",
+                    "value": "",
+                    "type": "input",
+                    "note": "请输入歌曲的url地址"
+                },
+                {
+                    "name": "pic",
+                    "label": "歌曲的图片地址",
+                    "value": "",
+                    "type": "input",
+                    "note": "请输入歌曲的图片地址"
+                },
+                {
+                    "name": "name",
+                    "label": "歌曲名",
+                    "value": "",
+                    "type": "input",
+                    "note": "请输入歌曲名"
+                },
+                {
+                    "name": "author",
+                    "label": "歌曲的作者名",
+                    "value": "",
+                    "type": "input",
+                    "note": "请输入歌曲的作者名"
+                }
+            ]
+        },
+        {
+            "name": "Valine",
+            "label": "是否开启",
+            "group": "Valine 评论",
+            "value": "off",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ],
+            "note": "设置文档： https://valine.js.org/"
+        },
+        {
+            "name": "valineAppId",
+            "label": "App ID",
+            "group": "Valine 评论",
+            "value": "",
+            "type": "input",
+            "note": "从 LeanCloud 的应用中得到的 appId"
+        },
+        {
+            "name": "valineAppKey",
+            "label": "App Key",
+            "group": "Valine 评论",
+            "value": "",
+            "type": "input",
+            "note": "从 LeanCloud 的应用中得到的 APP Key"
+        },
+        {
+            "name": "valineAvatar",
+            "label": "Avatar",
+            "group": "Valine 评论",
+            "value": "mp",
+            "type": "input",
+            "note": "Gravatar 头像展示方式"
+        },
+        {
+            "name": "valinePageSize",
+            "label": "Page Size",
+            "group": "Valine 评论",
+            "value": 10,
+            "type": "input",
+            "note": "评论列表分页，每页条数"
+        },
+        {
+            "name": "valineVisitor",
+            "label": "Visitor",
+            "group": "Valine 评论",
+            "value": false,
+            "type": "switch",
+            "note": "文章访问量统计"
+        },
+        {
+            "name": "valineHighlight",
+            "label": "Highlight",
+            "group": "Valine 评论",
+            "value": false,
+            "type": "switch",
+            "note": "代码高亮，默认开启，若不需要，请手动关闭"
+        },
+        {
+            "name": "valineRecordIp",
+            "label": "Record IP",
+            "group": "Valine 评论",
+            "value": false,
+            "type": "switch",
+            "note": "是否记录评论者IP"
+        },
+        {
+            "name": "valinePlaceholder",
+            "label": "Placeholder",
+            "group": "Valine 评论",
+            "value": "来都来了，不妨评论一下",
+            "type": "input",
+            "note": "评论框占位提示符"
+        },
+        {
+            "name": "supportAuthor",
+            "label": "🎉支持作者",
+            "group": "🎉支持作者",
+            "value": "on",
+            "type": "select",
+            "options": [{
+                    "label": "开",
+                    "value": "on"
+                },
+                {
+                    "label": "关",
+                    "value": "off"
+                }
+            ]
+        }
+    ]
+}
